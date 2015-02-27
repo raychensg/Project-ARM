@@ -1,0 +1,171 @@
+\documentclass[11pt]{article}
+\usepackage{paralist}
+\usepackage{float}
+\usepackage{hyperref}
+
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{-.25in}
+\setlength{\textheight}{8.75in}
+
+%------------------------------------------------------------
+
+\title{Sinister Stooge\\Design Document} 
+
+\author{R.R.Chen \and Primus Lam \and Adam Villaflor
+}
+\date{February 13, 2015---\today}
+
+%------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\noindent We will design, build, and test an articulated robotic arm. The rotational motion of the arm will be driven by stepper motors.
+\end{abstract}
+
+\newpage
+
+%------------------------------------------------------------
+
+\section{War Council 1 \\ February 13, 2015}
+
+\noindent \textbf{Project History:}
+\begin{compactitem}
+	\item CalHacks: Servo 2-joing arm
+	\item HackSC: Cam-driven Hammer, Myo
+	\item Bevel Gearmotor joint
+	\item Lantern Modulex
+\end{compactitem}
+
+\noindent \textbf{Procedural Improvements:}
+\begin{compactitem}
+	\item Formal Project Proposal
+		\begin{compactitem}
+		\item Schedule
+		\item Milestone Dates
+		\item Target Event
+		\end{compactitem}
+	\item Ongoing Documentation
+		\begin{compactitem}
+		\item Concept Sketches
+		\item Ongoing LaTeX doc
+		\item Private Github Repo
+		\item Data Logging
+		\end{compactitem}
+	\item Evaluations \& Revision
+		\begin{compactitem}
+		\item Peer Revision / Diagram approval
+		\item Quality Control
+		\item Professional Design Review
+		\end{compactitem}
+	\item Bill of Materials
+		\begin{compactitem}
+		\item Ordering List
+		\item Budget
+		\end{compactitem}
+\end{compactitem}
+
+\noindent \textbf{Future Goals:}
+	\begin{compactitem}
+	\item Research Sponsorship
+	\item Open Source
+	\item Expanded Team
+	\item Research Club
+	\item Present at Maker Faire Bay Area (May 16--17, 2015)
+	\end{compactitem}
+
+\noindent \textbf{Brainstorm:}
+	\begin{compactitem}
+	\item Arm
+	\item Pennyboard
+	\item Hand 
+	\item Animatronic
+	\item Smart Backpack
+	\item Smart Light
+	\item Holograms
+	\end{compactitem}
+
+\noindent \textbf{Action Items:}
+	\begin{compactitem}
+	\item Research holographic projection techniques
+		\begin{compactitem}
+		\item USC Spinning Mirror: \\ \url{http://youtu.be/eNWJ9XtRhLw}
+		\item Volumetric Helix: \\ \url{http://makezine.com/2012/06/18/hacktastic-horizontal-helical-3d-display/}
+		\item Laser Display
+		\end{compactitem}
+	\item Define scope/specifications for mechanical arm
+		\begin{compactitem}
+		\item Hydraulic/Industrial
+		\item Machine Learning System
+		\item Force Feedback System
+		\end{compactitem}
+	\end{compactitem}
+
+%------------------------------------------------------------
+
+\section{War Council 2 \\ February 20, 2015}
+
+\noindent \textbf{Discussion Topics:}
+\begin{compactitem}
+	\item 3D projector may require high-speed projector
+	\item Leap Motion \& Solidworks
+	\item Mechanical Arm
+\end{compactitem}
+
+\noindent \textbf{Design Matrix:}
+\begin{center}
+  \begin{tabular}{ c | c | c }
+  	Projector & Arm & LeapCAD \\
+    \hline
+    Requres high-speed projector & Stability and accuracy & Working with Solidworks API\\
+    Working with Solidworks API & Stepper motors & No hardware \\
+    Stable projection surface & Goal: balancing and throwing & \\
+  \end{tabular}
+\end{center}
+
+\noindent \textbf{Decision:}\\
+\indent The holographic projector poses the problem of creating a good image while allowing for a reasonable refresh rate. This is a project that will require more funding and knowledge of optics to complete. We are removing this project from the list.\\
+\\
+\indent Using Leap-Motion to control CAD software could be a useful and interesting to develop. We could develop a deeper understanding of Solidworks and the Leap-Motion. However, the scope of this project is more suitable for a Hackathon. Therefore, we will shelve this project until a suitable occasion.\\
+\\
+\indent The mechanical arm can be applied to a large scope of tasks. Creating a mechanical arm with a focus on precision and stability makes it a particularly useful for machine learning and automation. In particular, three test cases stand out to us: writing letters on a whiteboard, balancing a hammer, and throwing a ball. By creating an accurate, quick, and stable arm, we establish a hardware platform upon which to experiment with machine learning.\\
+
+%------------------------------------------------------------
+\newpage
+\section{Design Brief \\ February 23, 2015}
+\noindent \textbf{Modularity:}\\
+\indent The mechanical arm will designed to be modular. Addition or extension of joints should be simple and uncumbersome, with exception of extra load from the weight of the additional joint. The parts of each joint should be as universal as possible, and support the specified selection of motors.\\
+
+\noindent \textbf{NEMA Motor Chart:}
+\begin{center}
+  \begin{tabular}{ c | c | c }
+  	Motor (STP-MTR-*) & Holding Torque (oz-in) & Weight (lb) \\
+    \hline
+    17040 & 61 & 0.6 \\
+    17048 & 83 & 0.7 \\
+    17060 & 115 & 0.9 \\
+  \end{tabular}
+\end{center}
+
+\noindent \textbf{Motor Links:}
+\begin{compactitem}
+	\item https://www.inventables.com/technologies/stepper-motor-nema-17
+	\item http://www.adafruit.com/products/324
+	\item https://www.pololu.com/product/2267
+	\item https://www.pololu.com/product/1477
+	\item http://www.anaheimautomation.com/products/stepper/stepper-motors.php?tID=75\&pt=t\&cID=19
+	\item http://www.kollmorgen.com/en-us/products/motors/stepper/hi-torque/km-series/
+\end{compactitem}
+
+% TODO:
+% Decide name and make Github repo
+% Add people to Github repo: jeffreyywang
+
+\section{War Council 3 \\ February 26, 2015}
+\noindent \textbf{Bill of Material:}\\
+
+\end{document}
+

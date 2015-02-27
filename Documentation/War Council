@@ -1,0 +1,68 @@
+\documentclass[11pt]{article}
+\usepackage{tikz}
+
+\usetikzlibrary{arrows}
+
+\setlength{\topmargin}{-.5in}
+\setlength{\textheight}{9.2in}
+
+\begin{document}
+	\title{ME C85 Homework 1}
+	\author{Ruizhi Ray Chen \\ 25081095}
+	\date{\today}
+	\maketitle
+
+
+War Council
+RRCPL
+
+CalHacks
+	Servo 2-joing arm
+HackSC
+	Cam-driven Hammer
+	Mio
+Misc
+	Bevel Gearmotor joint
+	Lanturn Modulex
+
+
+Procedural Improvements
+	Formal Project Proposal
+		Schedule
+		Milestone Dates
+		Target Event
+	Ongoing Documentation
+		Concept Sketches
+		Ongoing LaTeX doc
+		Private Github Repo
+		Data Logging
+	Evaluations & Revision
+		Peer Revision / Diagram approval
+		Quality Control
+		Professional Design Review
+	Bill of Materials
+		Ordering List
+		Budget
+
+
+Future Goals
+	Research Sponsorship
+	Open Source
+	Expanded Team
+	Research Club
+	Maker Faire Bay Area (May 16 & 17, 2015)
+
+
+Brainstorm
+	Arm
+	Pennyboard
+	Hand 
+	Dog/Bird
+	Smart Backpack
+	Smart Light
+	Holograms
+
+Put off making name
+
+\end{document}
+
