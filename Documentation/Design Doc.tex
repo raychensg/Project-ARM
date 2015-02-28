@@ -159,10 +159,7 @@
 	\item \url{http://www.kollmorgen.com/en-us/products/motors/stepper/hi-torque/km-series/}
 \end{compactitem}
 
-% Add people to Github repo: jeffreyywang
-
 \section{War Council 3 \\ February 26, 2015}
-% avillaflor
 Decided on project name: Sinister Stooge.\\
 Each joint houses a motor-driver board.\\
 All boards are controlled via an Arduino.\\
@@ -170,8 +167,40 @@ Arduino and sensors connected to a computer.\\
 \\
 \noindent \textbf{Bill of Material:}\\
 \begin{enumerate}
-	\item NEMA 23 Stepper Motor (\$35.50 + \$6.00 Shipping): \url{http://www.automationdirect.com/adc/Shopping/Catalog/Motion_Control/Stepper_Systems/Stepper_Motors_-z-_Cables/STP-MTR-23055}
+	\item NEMA 23 Stepper Motor (\$35.50): \url{http://www.automationdirect.com/adc/Shopping/Catalog/Motion_Control/Stepper_Systems/Stepper_Motors_-z-_Cables/STP-MTR-23055} (Be sure to find Center of Mass upon receival)
+	\item Shipping (\$6.00): NEMA 23 from Automation Direct
+	\item 0.5 inch Aluminum Plate (\$):
+	\item 3 x 3 x 0.125 Box Beam (\$):
+	\item Turntable (\$2.12): \url{http://www.mcmaster.com/#6031k16/=w3g7z1}
+	\item 10-32 Screws (\$7.42): \url{http://www.mcmaster.com/#92196a266/=w3ge8k}
+	\item 6-32 Screws (\$3.55):\url{http://www.mcmaster.com/#92949a144/=w3gbh1}
 \end{enumerate}
+
+\section{Prototype Proposal \\ February 27, 2015}
+\noindent \textbf{Purpose:}\\
+\indent Fabricate an axial joint that is representive of all axial joints in the system. This joint is to be used for calibration and load testing, as well as system analysis.\\
+\indent This joint should be able to balance a tilt sensor (\url{https://www.sparkfun.com/products/10313}).
+
+\noindent \textbf{Deliverables:}
+\begin{enumerate}
+	\item Single axial joint with the following functionalities:
+	\begin{compactitem}
+		\item 270 degree rotation
+		\item 10 lb-in of torque
+		\item No noticable deflection under specified load
+		\item Less than 1 degree of undetected backlash
+		\item Full range of motion in under 0.5 seconds.
+	\end{compactitem}
+	\item A system to convert voltage detected from an Arduino to a graphic interface on laptop. It must have the following functionality
+	\begin{compactitem}
+		\item Plots desired sensory input on laptop screen in real time.
+		\item Saves plots as files (either interface into MatLab or as images)
+	\end{compactitem}
+\end{enumerate}
+
+\noindent \textbf{Deadline:}\\
+March 9, 2015 --- Arduino to PC Sensory Plotter complete\\
+March 16, 2015 --- Mechanical Axial Joint complete\\
 
 \end{document}
 
