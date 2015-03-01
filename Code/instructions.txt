@@ -1,0 +1,12 @@
+Navigate to this folder
+screen /dev/tty.usbserial-A400C0T9
+
+Test
+
+Save
+ctrl + a, h
+ctrl + a, ctrl + \
+
+Open Matlab
+A = import("hardcopy.0")
+figure; plot(A); axis([0, numel(A), 0, 5]);
