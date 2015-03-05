@@ -4,37 +4,24 @@
 % your requirements. Dont forget to add terminator in to your serial device program.
 % This script can be modified to be used on any platform by changing the
 % serialPort variable. 
-% Author: Moidu thavot.
-
-%%Clear all variables
 
 clear all;
-%%Variables (Edit yourself)
 
-SerialPort='/dev/tty.usbserial-A400C0T9'; %serial port
-MaxDeviation = 5;%Maximum Allowable Change from one value to next 
-TimeInterval=0.001;%time interval between each input.
-loop=1000;%count values
-%%Set up the serial port object
-
+SerialPort='/dev/tty.usbserial-A400C0T9';
+TimeInterval=0.001;
+loop=1000;
 s = serial(SerialPort)
 fopen(s);
 
 
 time = now;
 voltage = 0;
+
 %% Set up the figure 
-figureHandle = figure('NumberTitle','off',...
-    'Name','Voltage Characteristics',...
-    'Color',[0 0 0],'Visible','off');
+figureHandle = figure('NumberTitle','off', 'Name','Voltage Characteristics', 'Color',[0 0 0],'Visible','off');
 
 % Set axes
-axesHandle = axes('Parent',figureHandle,...
-    'YGrid','on',...
-    'YColor',[0.9725 0.9725 0.9725],...
-    'XGrid','on',...
-    'XColor',[0.9725 0.9725 0.9725],...
-    'Color',[0 0 0]);
+axesHandle = axes('Parent',figureHandle, 'YGrid','on', 'YColor',[0.9725 0.9725 0.9725], 'XGrid','on', 'XColor',[0.9725 0.9725 0.9725], 'Color',[0 0 0]);
 
 hold on;
 
@@ -93,9 +80,6 @@ k=0;
     count = count +1;
 end
 
-
-
-%% Clean up the serial port
 fclose(s);
 delete(s);
 clear s;
